@@ -32,12 +32,22 @@
                                     <action selector="uibutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3k8-Ct-UQ5"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PAK-tF-N8U">
+                                <rect key="frame" x="88" y="419" width="253" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="8 Ball"/>
+                                    <segment title="Test"/>
+                                    <segment title="Coin Flip"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="EeD-II-gFz" id="psJ-Jt-kmR"/>
+                        <outlet property="segment" destination="PAK-tF-N8U" id="v3x-mg-V5c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
